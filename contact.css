@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.navbar .nav-link:hover {
+    color: #f0bd4f !important;
+    
+}
+
+.navbar-brand span {
+    color: gainsboro;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff !important;
+
+}
+
+.navbar-brand i {
+    color: cyan !important;
+}
+.navbar .nav-link.active {
+  color:#f0bd4f !important;
+  font-weight: bold!important;
+}
+
+
+.bg-container-1{
+    background-color: black;
+    height :auto;
+}
+.title{
+    color: white;
+    font-size: clamp(2.5rem, 4.8vw, 3.8rem);
+    margin-bottom: 15px;
+    animation: fadeDown 1.2s ease-out;
+
+}
+.sub-head{
+    font-size: clamp(1rem, 2.3vw, 2.8rem);
+    color:aliceblue;
+    font-weight: 600;
+    animation: fadein 1.2s ease-out;
+}
+.details{
+    font-size: clamp(0.8rem, 1.4vw, 2rem);
+    color:azure;
+    animation: fadein 1.2s ease-out;
+}
+.details span,label span{
+    color:rgb(163, 8, 8);
+}
+.email-link{
+    color: #f0bd4f;
+    font-style: italic;
+    animation: fadein 1.2s ease-out;
+}
+.email{
+    animation: fadein 1.2s ease-out;
+}
+hr{
+    animation: fadein 1.2s ease-out;
+}
+
+label{
+    color: aliceblue;
+    font-weight: 600;
+    padding:8px;
+    animation: fadein 1.2s ease-out;
+}
+.input{
+    animation: fadein 1.2s ease-out;
+}
+textarea{
+    animation: fadein 1.2s ease-out;
+
+}
+.check-box-container{
+    animation: fadein 1.2s ease-out;
+}
+.send-btn{
+    background-color: #00adb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    animation: fadein 1.2s ease-out;
+}
+.send-btn:hover{
+    background-color: cyan;
+    color: black;
+    text-decoration: none;
+}
+footer {
+  margin-top: auto;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color:cyan;
+}
+.text-muted p{
+    color:#f0bd4f;
+}
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

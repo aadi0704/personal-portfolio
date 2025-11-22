@@ -1,0 +1,209 @@
+/* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    transition: background 1s ease;
+    /* smooth transition */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* stack content vertically */
+}
+
+#home {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    /* hidden initially */
+    flex: 1;
+    flex-direction: column;
+
+}
+
+
+/* Splash background */
+body.splash {
+    background: black;
+    color: white;
+}
+
+/* Home background */
+body.home {
+    background-image: url("base2.jpg");
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+@media (min-width: 768px) {
+    body.home {
+        background-image: url("bg3md.jpg");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+/* Large screens (≥1200px) */
+@media (min-width: 1200px) {
+    body.home {
+        background-image: url("bg3.jpg");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+
+#splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    animation: pop 2s ease forwards;
+}
+
+@keyframes pop {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Add more specificity to beat Bootstrap's rules */
+/* Navbar links hover underline effect */
+
+
+/* Optional: change link color on hover */
+.navbar .nav-link:hover {
+    color: #f0db4f !important;
+}
+.navbar .nav-link.active {
+  color: #f0db4f !important;
+  font-weight: bold!important;
+}
+
+
+.hello {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(6rem, 11vw, 10rem);
+}
+
+.head {
+    font-size: clamp(3rem, 3vw, 4rem);
+}
+
+.navbar-brand span {
+    color: gainsboro;
+}
+.navbar-brand i{
+    color: cyan !important;
+
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff !important;
+
+}
+
+footer {
+    margin-top: auto;
+    /* pushes footer to bottom */
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* prevents shrinking */
+
+
+footer a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color:cyan;
+}
+
+.explore-link {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.explore-link:hover {
+    color: #f0db4f;
+    /* cyan hover */
+    transform: translateX(8px);
+    /* subtle movement */
+}
+
+.explore-link i {
+    transition: transform 0.3s ease;
+}
+
+.explore-link:hover i {
+    transform: translateX(5px);
+}
+.text-muted {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
+  color:rgb(236, 242, 247) !important;
+}
+.passion-context {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}

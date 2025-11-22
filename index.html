@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <div id="splash">PORTFOLIO</div>
+
+  <div id="home" style="display:none">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">a <span><i class="fa-regular fa-face-smile-beam"></i></span> d i</a>
+        <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-3"><a class="nav-link active text-light" href="#">Home</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="about.html">About Me</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="projects.html">Projects</a></li>
+            <li class="nav-item me-3"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container flex-grow-1 d-flex flex-column justify-content-center">
+      <div class="content-wrapper text-light">
+        <div class="content">
+          <h1 class="hello">Hello, </br>World!</h1>
+          <h1 class="head"> I'm <span>Aadi....</span></h1>
+          <p class="text-muted">Adi V Narasimha Sai Krishna Medicharla</p>
+          <p class="passion-context">Web Developer | 3rd-Year B.Tech (AI & DS)</p>
+
+          <div class="explore-section mt-4">
+            <a href="projects.html" class="explore-link">
+              EXPLORE MY PROJECTS<i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="d-flex justify-content-center gap-4 mb-lg-0">
+        <a href="https://github.com/aadi0704" class="text-decoration-none" target="_blank"><i class="fab fa-github fa-lg"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/adi-medicharla/" class="text-decoration-none" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+        <a href="https://x.com/aadi__0704" class="text-decoration-none" target="_blank"><i class="fab fa-twitter fa-lg"></i> Twitter</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const splash = document.getElementById("splash");
+      const home = document.getElementById("home");
+
+      function showSplash() {
+        document.body.classList.remove("home");
+        document.body.classList.add("splash");
+        splash.style.display = "flex";
+        home.style.display = "none";
+
+        setTimeout(() => {
+          hideSplash();
+          // mark as seen for THIS TAB only
+          sessionStorage.setItem("seenSplash", "1");
+        }, 2000);
+      }
+
+      function hideSplash() {
+        document.body.classList.remove("splash");
+        document.body.classList.add("home");
+        splash.style.display = "none";
+        home.style.display = "flex";
+      }
+
+      // First paint for this tab
+      document.addEventListener("DOMContentLoaded", () => {
+        const seen = sessionStorage.getItem("seenSplash");
+        if (!seen) {
+          showSplash();
+        } else {
+          hideSplash(); 
+        }
+      });
+
+      window.addEventListener("pageshow", (e) => {
+        if (e.persisted || sessionStorage.getItem("seenSplash")) {
+          hideSplash();
+        }
+      });
+      const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+      if (mq.matches) {
+        document.addEventListener("DOMContentLoaded", () => {
+          sessionStorage.setItem("seenSplash", "1");
+          hideSplash();
+        }, { once: true });
+      }
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

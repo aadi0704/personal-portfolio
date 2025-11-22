@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="bg-container-1">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">a <span><i class="fa-regular fa-face-smile-beam"></i></span> d i</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-3"><a class="nav-link text-light" href="index.html">Home</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-light" href="about.html">About Me</a></li>
+                        <li class="nav-item me-3"><a class="nav-link text-light" href="projects.html">Projects</a></li>
+                        <li class="nav-item me-3"><a class="nav-link active text-light" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="first p-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-flex flex-column">
+                            <div>
+                                <h1 class="title pt-4 pb-5">Contact Me!</h1>
+                            </div>
+                            <div>
+                                <h3 class="sub-head pb-4">Have any questions? Fill out the form and I’ll get you a response soon!</h3>
+                                
+                            </div>
+                            <div class="pb-3">
+                                <p class="details">I’m currently a student, eager to learn and explore new opportunities.</p>
+                                <p class="details">Whether it’s about projects, internships, or ideas, I’d love to connect.You can reach me through the contact form or my social links below.</p>
+                                
+                            </div>
+                            <div class="pb-3 email">
+                                <a class="email-link" href="mailto:aadimedicharla44@gmail.com">@aadimedicharla44gmail.com</a>
+                            </div>
+                            <hr style="border: 1px solid #dee2e6; margin-top: 10px;" class="d-md-none">
+                    </div>
+                    
+                    <div class="col-12 col-lg-6">
+                        <form>
+                            
+                            <div class="d-flex flex-column justify-content-center p-3" style="max-width: 600px;">
+                                <div class="d-flex flex-row mb-3">
+                                    <div class="d-flex flex-column me-3 w-50">
+                                    <label for="first-name" class="form-label">First Name <span>(*)</span></label>
+                                    <input type="text" id="first-name" class="form-control input" name="First Name" />
+                                    </div>
+                                    <div class="d-flex flex-column w-50">
+                                    <label for="last-name" class="form-label">Last Name <span>(*)</span></label>
+                                    <input type="text" id="last-name" class="form-control input" name="Last Name" />
+                                    </div>
+                                </div>
+
+                                <div class="pt-3 pb-3">
+                                    <p class="details">Which are you? <span>(*)</span></p>
+                                    <div class="d-flex flex-column check-box-container">
+                                    <label><input type="checkbox" id="student" class="cyan-checkbox" /> Student</label>
+                                    <label><input type="checkbox" id="recruiter" class="cyan-checkbox" /> Recruiter</label>
+                                    <label><input type="checkbox" id="company" class="cyan-checkbox" /> Company (NIL)</label>
+                                    <label><input type="checkbox" id="others" class="cyan-checkbox" /> Others</label>
+                                    </div>
+                                </div>
+
+                                <div class="pt-3 pb-3">
+                                    <p class="details">Message <span>(*)</span></p>
+                                    <textarea
+                                    placeholder="Type Message..."
+                                    rows="8"
+                                    cols="60"
+                                    class="form-control"
+                                    ></textarea>
+                                </div>
+
+                                <div class="pt-3 pb-3">
+                                    <button class="btn send-btn mt-3">
+                                    Send <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                                </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-5">
+            <div class="d-flex justify-content-center gap-4 mb-3">
+                <a href="https://github.com/aadi0704" class="text-decoration-none" target="_blank"><i class="fab fa-github fa-lg"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/adi-medicharla/" class="text-decoration-none" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+                <a href="https://x.com/aadi__0704" class="text-decoration-none" target="_blank"><i class="fab fa-twitter fa-lg"></i> Twitter</a>
+            </div>
+            <p class="mb-0 mt-2" style="color:#f0bd4f;">
+                <i class="fa-regular fa-copyright"></i>
+                <span id="year"></span> Adi Medicharla. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    transition: background 1s ease;
+    /* smooth transition */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* stack content vertically */
+}
+
+.bg-container-1 {
+    
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    width: 100%;
+}
+.bg-container-2{
+    background-color: #fff;
+    height:auto;
+}
+.education-degree{
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 700;
+    color:#00adb5;
+    margin-bottom: 5px;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+}
+.education-institution{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    color:#f0db4f;
+    margin-bottom: 3px;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+}
+.education-duration{
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 500;
+    color:azure;
+    margin-bottom: 10px;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+}
+.cgpa{
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-weight: 500;
+    color:aliceblue;
+    margin-bottom: 10px;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+}
+.cgpa span{
+    font-weight: 700;
+    color:#f0d4bf;
+}
+.education-details{
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.6;
+    color:azure;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+}
+.head {
+    padding: 10px 20px;
+    
+    font-size: clamp(4rem, 10vw, 8rem);
+    color: whitesmoke;
+    animation: fadeDown 1.2s ease-out;
+    z-index: 10;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navbar .nav-link:hover {
+    color: #f0db4f !important;
+    
+}
+
+.navbar-brand span {
+    color: gainsboro;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff !important;
+
+}
+
+.navbar-brand i {
+    color: cyan !important;
+}
+
+.container-1 {
+    background-color: transparent;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    top: 20%;
+    animation: fadein 1.2s ease-out;
+    padding-left: 10px;
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img-pro {
+    box-shadow: 0 4px 8px rgba(47, 239, 226, 0.2);
+}
+
+.container-1 h1 {
+    
+    font-size: clamp(1.4rem, 4vw, 3.2rem);
+    color:white;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    color: gainsboro;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-family: 'roboto';
+    line-height: 2;
+
+}
+
+.resume-btn {
+    background-color: #00adb5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: cyan;
+    color: black;
+    text-decoration: none;
+}
+
+.about-text p b {
+    color: rgb(243, 241, 238);
+
+}
+
+.navbar .nav-link.active {
+  color: #f0db4f !important;
+  font-weight: bold!important;
+}
+.sub-titles{
+    color: #000;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 600;
+    margin-bottom: 10px;
+    animation: fadeDown 1.2s ease-out;
+    
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transform :border 0.4s ease, box-shadow 0.3s ease;
+    animation:fadein 1.2s ease-out;
+    min-width: 330px;
+    max-width:330px;
+    min-height:140px;
+    max-height:140px;
+    padding:16px;
+    gap:14px;
+    margin-bottom:16px;
+}
+.skill-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+}
+.skill-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.skill-level{
+    color:aliceblue;
+    font-size: clamp(0.7rem, 0.9vw, 1rem);
+    line-height: 1.6;
+    animation:fadein 1.2s ease-out;
+    font-weight: 500;
+    align-self:center;
+    border:1px solid #9ca3af ;
+    border-radius:999px;
+    padding-left:10px;
+    padding-right:10px;
+    align-self: center;
+}
+.skill-icon{
+    align-self: center;
+    animation:fadein 1.2s ease-out;
+
+}
+.skill-heading{
+    color:azure;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+    font-weight: 500;
+    align-self:center;
+}
+.skill-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill-data{
+    color: #9ca3af;
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
+    line-height: 1.6;
+    animation:fadein 1.2s ease-out;
+    font-weight: 500;
+    align-self:center;
+}
+.skill-tag{
+    color:#38bdf8;
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    letter-spacing: 0.12em;
+    line-height: 1.6;
+    animation:fadein 1.2s ease-out;
+    font-weight: 500;
+    align-self:center;
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    border-radius:999px;
+    padding-left:10px;
+    padding-right:10px;
+    align-self: center;
+}
+.head-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} /*skill*/
+
+.bg-container-3{
+    background-color: #000;
+    width: 100%;
+    height: auto;
+}
+.football-img{
+    animation:fadein 1.2s ease-out;
+}
+.football-description{
+    color:#666;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.6;
+    animation:fadein 1.2s ease-out;
+    padding-bottom: 4px;
+    font-weight: 600;
+
+}
+.football-description strong{
+    color:#000;
+}
+.title{
+    color: white;
+    font-size: clamp(2rem, 4vw, 3.8rem);
+    margin-bottom: 15px;
+    animation: fadeDown 1.2s ease-out;
+
+}
+footer {
+  margin-top: auto; /* pushes footer to bottom */
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}       /* prevents shrinking */
+
+
+footer a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: cyan;
+}
+.skill-card{
+    background: rgba(3, 3, 3, 0.9);
+}
