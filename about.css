@@ -281,6 +281,7 @@ body {
     padding-left:10px;
     padding-right:10px;
     align-self: center;
+    text-transform: uppercase;
 }
 .head-card{
     display: flex;
